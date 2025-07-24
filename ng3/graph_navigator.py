@@ -45,9 +45,13 @@ class GraphNavigatorWebserver(InputWebserver):
         """
         configure with args
         """
+        super().configure_run()
         self.graph = MogwaiGraph()
 
     def load_schema(self, yaml_path: str):
+        """
+        load the GraphSchem from the given yaml_path
+        """
         self.schema = GraphSchema.load(yaml_path=yaml_path)
         self.schema.add_to_graph(self.graph)
 

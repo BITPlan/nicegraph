@@ -18,7 +18,7 @@ class Version:
     name = "nicegraph"
     version = ng3.__version__
     date = "2025-07-23"
-    updated = "2025-07-23"
+    updated = "2025-07-24"
     description = "nicegraph - Nicegui based graph navigation"
 
     authors = "Wolfgang Fahl"
